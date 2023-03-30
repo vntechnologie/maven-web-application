@@ -9,8 +9,8 @@ node{
  /* 
  stage('3codeQuality'){
  	 sh "${mavenHome}/bin/mvn sonar:sonar" 
-  } 
- */
+  } */
+ 
   stage('4UploadArtifacts'){
  	 sh "${mavenHome}/bin/mvn deploy"
  }
