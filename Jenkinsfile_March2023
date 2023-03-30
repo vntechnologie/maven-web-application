@@ -8,8 +8,9 @@ node{
  }
  /* 
  stage('3codeQuality'){
- 	 sh "${mavenHome}/bin/mvn sonar:sonar"
- }
+ 	 sh "${mavenHome}/bin/mvn sonar:sonar" 
+  } 
+ */
   stage('4UploadArtifacts'){
  	 sh "${mavenHome}/bin/mvn deploy"
  }
@@ -32,5 +33,5 @@ Build is done.
 
 LANDMARKTECH''', recipientProviders: [developers(), contributor(), upstreamDevelopers()], subject: 'Build Status', to: 'mylandmarktech@gmail.com'
   }
- */  
+  
 }
